@@ -53,7 +53,7 @@ app = FastAPI(
 def _parse_cors_origins() -> tuple[list[str], bool]:
     raw = os.getenv(
         "CORS_ORIGINS",
-        "http://localhost:5173,http://127.0.0.1:5173,http://localhost:19006,http://localhost:8081",
+        "*",
     )
     origins = [origin.strip() for origin in raw.split(",") if origin.strip()]
     if not origins or "*" in origins:
