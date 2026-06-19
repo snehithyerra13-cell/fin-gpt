@@ -1,0 +1,15 @@
+*.pyc
+__pycache__/
+.env
+venv/
+backend/data/
+frontend/dist/
+frontend/.env
+frontend/node_modules/
+*.ckpt
+ptmodels/ 
+*.safetensors 
+*.pt 
+*.bin
+Dockerfile.zip
+*.zip
